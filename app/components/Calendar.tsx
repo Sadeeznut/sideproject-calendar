@@ -137,7 +137,7 @@ export default function Home() {
     <>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="grid grid-cols-10">
-          <div className="col-span-8">
+          <div className="col-span-8 ">
           <FullCalendar
           plugins={[
             dayGridPlugin,
@@ -164,11 +164,11 @@ export default function Home() {
 
 
           </div>
-          <div id="draggable-el" className="ml-8 w-full border-2 p-2 rounded-md mt-16 lg:h-1/2 bg-violet-50">
+          <div id="draggable-el" className="ml-8 w-full border-2 p-2 rounded-md mt-16 lg:h-1/2 bg-stone-200">
             <h1 className="font-bold text-lg text-center">Drag Event</h1>
             {events.map(event => (
               <div
-                className="fc-event border-2 p-1 m-2 w-full rounded-md ml-auto text-center bg-white cursor-pointer"
+                className="fc-event border-2 p-1 m-2 w-full rounded-md ml-auto text-center bg-white hover:bg-blue-500 hover:text-white cursor-pointer "
                 title={event.title}
                 key={event.id}
               >
